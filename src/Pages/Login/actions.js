@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "services/api";
 import { loginActions } from "config/constants";
 
 export const setMessage = message => dispatch => {
@@ -11,7 +11,7 @@ export const setIsLoggin = status => dispatch => {
 
 export const fetchLogin = data => async dispatch => {
   try {
-    const payload = await axios.post("https://reqres.in/api/login", data);
+    const payload = await api.post("/login", data);
     dispatch(setMessage({ type: "success", text: "Logado com sucesso" }));
     window.localStorage.setItem("token", payload.token);
     setTimeout(() => {

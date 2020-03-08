@@ -1,8 +1,8 @@
 import React from "react";
 import { GlobalStyle } from "config/styles";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Login from "Login";
-import Users from "Users";
+import Login from "Pages/Login";
+import Users from "Pages/Users";
 
 export default function Routes() {
   return (
