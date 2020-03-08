@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
  *,
  * {
     margin: 0;
@@ -10,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   
   
   body {
+    font-family: 'Roboto', sans-serif;
     background: #4f3961;
   }
 `;

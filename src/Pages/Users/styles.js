@@ -30,3 +30,18 @@ export const Avatar = styled.img`
   border-radius: 50%;
   margin-right: 10px;
 `;
+
+export const BtnGroup = styled.div`
+  width: 80px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  > button {
+    margin-left: 10px;
+  }
+`;
+
+export const Text = styled.p`
+  font-size: 12px;
+  text-align: center;
+`;

@@ -1,9 +1,9 @@
 import React from "react";
 import { Btn } from "./styles";
 
-export default function Button({ children, variant, ...rest }) {
+export default function Button({ children, variant, size, ...rest }) {
   return (
-    <Btn type="button" {...rest} variant={variant}>
+    <Btn size={size} type="button" {...rest} variant={variant}>
       {children}
     </Btn>
   );

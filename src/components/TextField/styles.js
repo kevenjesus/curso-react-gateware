@@ -10,4 +10,5 @@ export const Input = styled.input`
   font-size: 12px;
   outline: none;
   margin-bottom: 15px;
+  margin-right: ${({ marginRight }) => (marginRight ? marginRight : "0")};
 `;
