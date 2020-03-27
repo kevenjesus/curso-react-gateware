@@ -13,7 +13,7 @@ function Login({ isLoggin, message, setMessage, setIsLoggin, fetchLogin }) {
   const [password, setPassword] = useState("");
   function validForm() {
     if (username.trim() === "") {
-      setMessage({ type: "danger", text: "Preencha seu nome" });
+      setMessage({ type: "danger", text: "Preencha seu e-mail" });
     } else if (password.trim() === "") {
       setMessage({ type: "danger", text: "Preencha sua senha" });
     } else {
